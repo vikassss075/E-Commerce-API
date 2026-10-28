@@ -6,10 +6,6 @@ const userRouter = require('./routes/users');
 const productRouter = require('./routes/products');
 const cartRouter = require('./routes/cart');
 
-app.get('/', (req,res)=>{
-    res.send('welcome to e-com');
-})
-
 app.use('/users', userRouter);
 app.use('/products', productRouter);
 app.use('cart', cartRouter);
